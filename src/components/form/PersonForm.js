@@ -1,13 +1,13 @@
 import { useReducer } from "react";
 import Form from "../../layout/Form";
-import PatientInput from "./input/patient/PatientInput";
+import PersonInput from "./input/person/PersonInput";
 import UserInput from "./input/user/UserInput"
 import ContactInfoInput from "./input/contact/ContactInfoInput"
 import AddressInput from "./input/address/AddressInput"
 import actionsCreators from "./actions/actions";
-import { patientReducer } from "./reducer/reducers";
+import { personReducer } from "./reducer/reducers";
 
-const PatientForm = (props) => {
+const PersonForm = (props) => {
     
     const initialState = {
         id: null,
@@ -34,7 +34,7 @@ const PatientForm = (props) => {
         }
     }
 
-    const [patient, dispatch] = useReducer(patientReducer, initialState);
+    const [person, dispatch] = useReducer(personReducer, initialState);
 
     const handleUserNameChange = (e) => dispatch(actionsCreators.setUsernameAction(e.target.value))
 
@@ -63,25 +63,25 @@ const PatientForm = (props) => {
     return (
         <Form>
             <UserInput 
-                user = {patient.appUser} 
+                user = {person.appUser}
                 onUsernameChange={handleUserNameChange}
                 onPasswordChange={handlePasswordChange}
                 onConfirmChange={handleConfirmChange}
             />
-            <PatientInput 
-                patient = {patient}
+            <PersonInput
+                person = {person}
                 onBirthDateChange={handleBirthDateChange}
                 onFirstNameChange={handleFirstNameChange}
                 onLastNameChange={handleLastNameChange}
                 onPnrChange={handlePnrChange}                
             />
             <ContactInfoInput
-                contactInfo = {patient.contactInfo}
+                contactInfo = {person.contactInfo}
                 onEmailChange = {handleEmailChange}
                 onPhoneChange = {handlePhoneChange}
             />
             <AddressInput 
-                address = {patient.contactInfo.address}
+                address = {person.contactInfo.address}
                 onStreetChange = {handleStreetChange}
                 onZipCodeChange = {handleZipCodeChance}
                 onCityChange = {handleCityChange}
@@ -92,4 +92,4 @@ const PatientForm = (props) => {
 
 }
 
-export default PatientForm;
+export default PersonForm;
