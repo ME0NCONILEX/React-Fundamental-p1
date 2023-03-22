@@ -117,14 +117,14 @@ const RevTable = () => {
                             Composer Information
                         </div>
                         <div className="card-body">
-                            <h5 className="card-title">
-                                {composer.country} {composer.city}
-                            </h5>
-                            <p className="card-text">Id: {composer.id} </p>
+                             <p className="card-text">Id: {composer.id} </p>
                             <p className="card-text">
                                 Name: {composer.firstName} {composer.lastName}
                             </p>
                             <p className="card-text">BirthDate: {composer.birthDate} </p>
+                           <h6 className="card-title">
+                                {composer.city}{","}{composer.country}
+                            </h6>
                         </div>
                         <div className="card-footer bg-gradient-100">
                             <button type="button" className="btn btn-outline-success"
