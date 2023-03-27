@@ -10,7 +10,8 @@ import Table from './my4drill-table/Table';
 import RevTable from "./my4drill-table/RevTable";
 // import StyleExample from './my5drill-css/StyleExample';
 // import MenuList from './my7drill-props/MenuList';
- import AxiosDrill from './my8drill-axios/AxiosDrill';
+import AxiosDrill from './my8drill-axios/AxiosDrill';
+import AxiosRevDrill from './my8drill-axios/AxiosRevDrill';
 // import RouterDrill from './my9drill-router/RouterDrill';
 // import CarsDrill from './my10drill-structure/CarsDrill';
 // import ChangeDrill from "./my11bdrill-textevent/ChangeDrill";
@@ -22,8 +23,6 @@ import AppClass from "./my1drill-class/AppClass";
 import InputGroup from "./layout/InputGroup";
 import Form from "./layout/Form";
 import FormItem from "./layout/FormItem";
-
-
 
 const greetingMessage = <div>Hello Everybody!</div>;
 
@@ -40,7 +39,3 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const names = ["Johann Strauss", "Amadeus Amadeus Mozart", "Giuseppe Verdi"];
 root.render(<RevTable names={names} />);
-
-
-
-
