@@ -10,7 +10,7 @@
  * 5 my5drill-css  >> CSS (Style example)
  * 6 my6drill-var-function  >> Name List
  * 7 my7drill-props  >> Menu List
- * 8 my8drill-axios  >> Axios (fanny example)
+ * 8 my8drill-axios  >> Axios (fanny example + new edit)
  * 9 my9drill-router  >> Router
  * 10 my10drill-structure  >> Structure
  * 11a my11adrill-counterevent  >> Counter
