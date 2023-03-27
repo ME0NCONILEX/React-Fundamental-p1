@@ -24,10 +24,10 @@ const RouterDrill = () => {
 
 const Header = () => {
     return (
-        <Fragment>
-            <ul className="nav nav-pills nav-fill bg-dark text-white">
+        <Fragment><h4>
+            <ul className="nav nav-pills nav-fill bg-warning" >
                 <li className="nav-item">
-                    <Link className="nav-link" to="/">Welcome</Link>
+                    <Link className="nav-link" to="/" >Welcome</Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="/home">Home</Link>
@@ -39,7 +39,7 @@ const Header = () => {
                     <Link className="nav-link" to="/about">About ME0NCONILEX</Link>
                 </li>
             </ul>
-        </Fragment>
+        </h4></Fragment>
     );
 }
 
@@ -53,8 +53,7 @@ const Home = () => {
 
     return (
         <Fragment>
-            <h3>Home</h3>
-            <br />
+            <h3>Home ... sweet Home</h3>
 
             <button className="btn btn-outline-danger" onClick={() => navigate(-1)}>Back</button>
             <button className="btn btn-outline-success" onClick={() => navigate(1)}>Forward</button>
@@ -68,7 +67,7 @@ const Welcome = () => <h3>ME0NCONILEX wish You  Welcome</h3>
 const About = () => {
     return (
         <Fragment>
-            About ME0NCONOLEX
+            About ME0NCONILEX  <br/> bla bla bla ...
         </Fragment>
     )
 }
@@ -131,6 +130,5 @@ const ErrorPage = () => {
         </Fragment>
     )
 }
-
 
 export default RouterDrill
