@@ -75,7 +75,7 @@ const AxiosDrill = () => {
     //Create / Post
     const sendPostRequest = async () => {
 
-        const data = { firstName: "Åsa", lastName: "Jonsson", email: "asa.jonsson1@lexicon.se", title: ".Net Teacher"
+        const data = { firstName: "First", lastName: "Name", email: "first.name@nonet.io", title: ".example"
         }
 
         await axios.post(URL, data)
@@ -107,10 +107,10 @@ const AxiosDrill = () => {
     const sendPutRequest = async () => {
 
         const data = { id:2,
-            firstName: "Test!",
-            lastName: "Testsson",
-            email: "test.testsson@test.se",
-            title: "Tester!"
+            firstName: "new",
+            lastName: "name",
+            email: "new.name@nonet.io",
+            title: "newex"
         }
 
         await axios.put(URL, data)
